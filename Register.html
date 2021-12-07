@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Youcode-Register</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <form id="form" class="formContainer">
+          <h1>Register</h1>
+          <div class="formGroup">
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" required />
+          </div>
+          <div class="formGroup">
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" required />
+          </div>
+          <div class="formGroup">
+            <label for="phoneNumber">Phone Number:</label>
+            <input
+              type="tel"
+              name="phoneNumber"
+              required
+              pattern="[0]+[0-9]{9}"
+            />
+          </div>
+          <div class="formGroup">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+          </div>
+          <div class="formGroup">
+            <label for="idCard">ID Card:</label>
+            <input
+              type="text"
+              name="idCard"
+              required
+              pattern="[A-Za-z]{2}[0-9]{5,}"
+            />
+          </div>
+          <div class="formGroup">
+            <label for="dateOfBirth">Date Of Birth:</label>
+            <input type="date" name="dateOfBirth" required />
+          </div>
+
+          <button onclick="manageStudentData()" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

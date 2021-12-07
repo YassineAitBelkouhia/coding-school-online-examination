@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap");
+
+:root {
+  --maincolor: #2e2e2e;
+  --secondary: #e7ebf7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background: url("./ASSETS/935315.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 75%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: roboto mono;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  height: 75px;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+
+.navBar a {
+  font-family: roboto mono;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.logo {
+  width: 70px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  height: 700px;
+  /* border: 1px solid white; */
+}
+
+.content h1 {
+  color: var(--secondary);
+  font-family: roboto mono;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.content img {
+  width: 300px;
+}
+
+.content a {
+  font-family: roboto mono;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--secondary);
+  border: #e7ebf7 solid 1px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+.footer {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  /* border: 1px solid white; */
+}
+
+.footer p {
+  color: var(--secondary);
+  font-family: roboto mono;
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* REGISTER */
+
+.formContainer {
+  width: 400px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  background: var(--maincolor);
+  padding: 20px 30px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.formGroup label {
+  color: var(--secondary);
+  font-family: roboto mono;
+  font-weight: 100;
+}
+
+.formGroup input {
+  background: transparent;
+  border: none;
+  height: 30px;
+  border-bottom: 1px solid #e7ebf7;
+  outline: none;
+  color: var(--secondary);
+  font-family: roboto mono;
+  font-size: 20px;
+}
+
+.formContainer button {
+  width: 200px;
+  height: 50px;
+  align-self: center;
+  margin: 40px 0 0 0;
+  background: transparent;
+  border: 1px solid #e7ebf7;
+  border-radius: 5px;
+  font-size: 18px;
+  color: var(--secondary);
+  font-family: roboto mono;
+}
